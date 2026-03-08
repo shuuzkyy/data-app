@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.set_page_config(page_title="401A Data Utility App", page_icon="📊", layout="wide")
+st.set_page_config(page_title="shuuzkyy", layout="wide")
 
 if "users" not in st.session_state:
     st.session_state.users = pd.DataFrame(columns=[
@@ -15,12 +15,13 @@ if "projects" not in st.session_state:
     ])
 
 with st.sidebar:
-    st.title("📊 ICS - 01 - 401")
-    st.subheader("Data Utility App")
+    st.title("SushiData")
+    st.subheader("📊ICS - 01 - 401A")
+    st.write("Data Utility App")
 
     page = st.radio("Choose Navigation", ["About Page", "Dashboard", "Data Filter", "Calculator", "Projects", "Feedback"])
     st.divider()
-    st.caption("Shuuzky - Developer")
+    st.caption("Shuuzkyy - Developer")
 
 def about():
     st.title("About This Data Utility App")
